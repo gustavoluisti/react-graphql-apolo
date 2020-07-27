@@ -27,7 +27,7 @@ const App = () => {
             <h1>Articles</h1>
             <div className="row">
               {data.articles.map((article) => (
-                <div className="col-sm">
+                <div key={article.title} className="col-sm">
                   <div className="card" style={{ width: "18rem" }}>
                     <img
                       src={article.coverImageUrl}
